@@ -22,13 +22,16 @@ MeCab.prototype = {
 # 実行
 
 ```
-MECAB_IPADIC_NELOGD_PATH=YOUR_PATH_TO_MECAB_IPADIC_NELOGD npm start
+// mecab-ipadic-neologdへのパスは自身の環境の値に置き換えてください。
+MECAB_IPADIC_NELOGD_PATH=/usr/local/mecab/lib/mecab/dic/mecab-ipadic-neologd npm start
 ```
 
 # APIへのアクセス
 
 **解析**
+
 http[s]://YOUR_HOST_NAME/api/parse?text=分析したいテキスト
 
 **わかち書き**
+
 http[s]://YOUR_HOST_NAME/api/wakachi?text=分析したいテキスト
