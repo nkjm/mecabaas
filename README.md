@@ -45,3 +45,7 @@ MECAB_IPADIC_NELOGD_PATH=/usr/local/mecab/lib/mecab/dic/mecab-ipadic-neologd npm
 **わかち書き**
 
 - http[s]://YOUR_HOST_NAME/api/wakachi?text=分析したいテキスト
+
+# Demo
+
+- http://mecab.oracle.tokyo/api/parse?text=ハンバーグを食べました。
