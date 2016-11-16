@@ -1,7 +1,9 @@
 # インストール方法
 
+```
 $ git clone https://github.com/nkjm/mecabaas.git
 $ npm install
+```
 
 mecab-asyncモジュールをmecab-ipadic-NElogdを使うように修正する。
 
