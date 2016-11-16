@@ -5,7 +5,7 @@
 
 http://mecab.oracle.tokyo/api/parse?text=ハンバーグを食べました。　
 
-形態素解析にはmecabを利用します。辞書としてIPA辞書、もしくはmecab-ipadic-NElogdを利用できます。
+形態素解析には[mecab](http://taku910.github.io/mecab/)を利用します。辞書としてIPA辞書、もしくは[mecab-ipadic-NElogd](https://github.com/neologd/mecab-ipadic-neologd/blob/master/README.ja.md)を利用できます。
 
 # 環境要件
 
