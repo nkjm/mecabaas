@@ -1,0 +1,26 @@
+{
+  "name": "mecabaas",
+  "version": "1.0.0",
+  "description": "MeCab as a Service.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkjm/mecabaas.git"
+  },
+  "keywords": [
+    "mecab"
+  ],
+  "author": "Kazuki Nakajima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nkjm/mecabaas/issues"
+  },
+  "homepage": "https://github.com/nkjm/mecabaas#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mecab-async": "^0.1.0"
+  }
+}
