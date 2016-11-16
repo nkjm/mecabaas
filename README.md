@@ -12,13 +12,11 @@ $ vi node_modules/mecab-async/mecab.js
 ```
 
 ```
-var MECAB_IPADIC_NELOGD_PATH = process.env.MECAB_IPADIC_NELOGD_PATH;
-
 // for backward compatibility
 var MeCab = function() {};
 
 MeCab.prototype = {
-    command : 'mecab -d ' + MECAB_IPADIC_NELOGD_PATH,
+    command : 'mecab -d ' + process.env.MECAB_IPADIC_NELOGD_PATH,
 ```
 
 # 実行
@@ -26,3 +24,11 @@ MeCab.prototype = {
 ```
 MECAB_IPADIC_NELOGD_PATH=YOUR_PATH_TO_MECAB_IPADIC_NELOGD npm start
 ```
+
+# APIへのアクセス
+
+**解析**
+http[s]://YOUR_HOST_NAME/api/parse?text=分析したいテキスト
+
+**わかち書き**
+http[s]://YOUR_HOST_NAME/api/wakachi?text=分析したいテキスト
