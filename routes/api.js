@@ -6,7 +6,7 @@ const Mecab = require('mecab-async');
 const mecab = new Mecab();
 
 router.get('/parse', (req, res, next) => {
-    if (typeof req.query.text == "undefined" || req.query.text == null || req.query.text == ""){
+    if (typeof req.query.text != "string" || req.query.text.trim() == ""){
         res.status(400).send("text not found");
         return;
     }
@@ -15,7 +15,7 @@ router.get('/parse', (req, res, next) => {
 });
 
 router.get('/wakachi', (req, res, next) => {
-    if (typeof req.query.text == "undefined" || req.query.text == null || req.query.text == ""){
+    if (typeof req.query.text != "string" || req.query.text.trim() == ""){
         res.status(400).send("text not found");
         return;
     }
