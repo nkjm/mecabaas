@@ -5,12 +5,12 @@
 
 http://mecab.oracle.tokyo/api/parse?text=ハンバーグを食べました。　
 
-形態素解析には[mecab](http://taku910.github.io/mecab/)を利用します。辞書としてIPA辞書、もしくは[mecab-ipadic-NElogd](https://github.com/neologd/mecab-ipadic-neologd/blob/master/README.ja.md)を利用できます。
+形態素解析には[mecab](http://taku910.github.io/mecab/)を利用します。辞書として[mecab-ipadic-NEologd](https://github.com/neologd/mecab-ipadic-neologd/blob/master/README.ja.md)もしくは通常のIPA辞書を利用できます。
 
 # 環境要件
 
 - node.js
-- mecab, IPA辞書, mecab-ipadic-NElogdがインストールされていること。（mecab-ipadic-NElogdはなくても動きます。その場合、下記インストール手順の中でmecab-asyncモジュールを修正せずそのまま使ってください）
+- mecab, IPA辞書, mecab-ipadic-NEologdがインストールされていること。（mecab-ipadic-NElogdはなくても動きます。その場合、下記インストール手順の中でmecab-asyncモジュールを修正せずそのまま使ってください）
 
 # インストール方法
 
@@ -19,7 +19,7 @@ $ git clone https://github.com/nkjm/mecabaas.git
 $ npm install
 ```
 
-mecab-asyncモジュールをmecab-ipadic-NElogdを使うように修正する。
+mecab-asyncモジュールをmecab-ipadic-NEologdを使うように修正する。
 
 ```
 $ vi node_modules/mecab-async/mecab.js
@@ -37,7 +37,7 @@ MeCab.prototype = {
 
 ```
 // mecab-ipadic-neologdへのパスは自身の環境の値に置き換えてください。
-MECAB_IPADIC_NELOGD_PATH=/usr/local/mecab/lib/mecab/dic/mecab-ipadic-neologd npm start
+MECAB_IPADIC_NEOLOGD_PATH=/usr/local/mecab/lib/mecab/dic/mecab-ipadic-neologd npm start
 ```
 
 # APIへのアクセス

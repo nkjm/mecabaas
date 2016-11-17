@@ -1,7 +1,7 @@
 {
   "name": "mecabaas",
-  "version": "1.0.0",
-  "description": "MeCab as a Service.",
+  "version": "1.0.1",
+  "description": "MeCab as a Service using MeCab and mecab-ipadic-NEologd.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
